@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="5dip">
+
+        <ImageButton
+            android:id="@+id/pause"
+            style="@android:style/MediaButton"
+            android:contentDescription="@string/description"/>
+
+        <ImageButton
+            android:id="@+id/rewd"
+            style="@android:style/MediaButton"
+            android:contentDescription="@string/description"/>
+
+        <ImageButton
+            android:id="@+id/ffw"
+            style="@android:style/MediaButton"
+            android:contentDescription="@string/description"/>
+
+        <ImageButton
+            android:id="@+id/nxt"
+            style="@android:style/MediaButton"
+            android:contentDescription="@string/description"/>
+
+        <ImageButton
+            android:id="@+id/prev"
+            style="@android:style/MediaButton"
+            android:contentDescription="@string/description"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="42dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:layout_gravity="center_horizontal"
+            android:paddingRight="4dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/current_time" />
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="32dip"
+            android:id="@+id/seekBarVideo"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="42dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:layout_gravity="center_horizontal"
+            android:paddingRight="4dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/time" />
+
+        <ImageButton
+            android:id="@+id/fllscreen"
+            style="@android:style/MediaButton"
+            android:contentDescription="@string/description"/>
+
+        <ImageButton
+            android:id="@+id/mute"
+            style="@android:style/MediaButton"
+            android:contentDescription="@string/description"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

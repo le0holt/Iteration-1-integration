@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <declare-styleable name="ShapesView">
+
+        <attr name="shape_fill" format="enum">
+            <enum name="fill_off" value="0"/>
+            <enum name="fill_on" value="1"/>
+        </attr>
+
+        <attr name="shape_colour" format="enum">
+            <enum name="black" value="0"/>
+            <enum name="white" value="1"/>
+            <enum name="red" value="2"/>
+            <enum name="blue" value="3"/>
+        </attr>
+
+        <attr name="draw_shape" format="enum">
+            <enum name="rectangle" value="0"/>
+            <enum name="triangle" value="1"/>
+            <enum name="oval" value="2"/>
+            <enum name="line" value="3"/>
+        </attr>
+
+        <attr name="line_orientation" format="enum">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr>
+
+        <attr name="shape_height" format="integer"/>
+
+        <attr name="shape_width" format="integer"/>
+
+        <attr name="line_thickness" format="integer"/>
+
+    </declare-styleable>
+</resources>

@@ -1,0 +1,106 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_padding"
+    tools:context=".MainActivityGraphics"
+    android:orientation="vertical">
+
+    <com.sweng.claritas.socbox.ShapesView
+        android:id="@+id/black_square"
+        custom:draw_shape="rectangle"
+        custom:shape_fill="fill_on"
+        custom:line_thickness="30"
+        custom:shape_colour="blue"
+        custom:shape_height="500"
+        custom:shape_width="500"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.sweng.claritas.socbox.ShapesView
+        custom:draw_shape="oval"
+        custom:shape_fill="fill_on"
+        custom:line_thickness="30"
+        custom:shape_colour="black"
+        custom:shape_height="445"
+        custom:shape_width="445"
+        android:layout_marginTop="114dp"
+        android:layout_marginLeft="113dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.sweng.claritas.socbox.ShapesView
+        custom:draw_shape="oval"
+        custom:shape_fill="fill_off"
+        custom:line_thickness="30"
+        custom:shape_colour="red"
+        custom:shape_height="445"
+        custom:shape_width="445"
+        android:layout_marginTop="114dp"
+        android:layout_marginLeft="113dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.sweng.claritas.socbox.ShapesView
+        custom:draw_shape="rectangle"
+        custom:shape_fill="fill_off"
+        custom:line_thickness="30"
+        custom:shape_colour="black"
+        custom:shape_height="500"
+        custom:shape_width="500"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.sweng.claritas.socbox.ShapesView
+        custom:draw_shape="triangle"
+        custom:shape_fill="fill_off"
+        custom:line_thickness="30"
+        custom:shape_colour="red"
+        custom:shape_height="320"
+        custom:shape_width="320"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="143dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.sweng.claritas.socbox.ShapesView
+        custom:draw_shape="line"
+        custom:shape_fill="fill_off"
+        custom:line_orientation="vertical"
+        custom:line_thickness="40"
+        custom:shape_colour="white"
+        custom:shape_height="500"
+        custom:shape_width="50"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="214dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.sweng.claritas.socbox.ShapesView
+        custom:draw_shape="line"
+        custom:shape_fill="fill_off"
+        custom:line_orientation="horizontal"
+        custom:line_thickness="40"
+        custom:shape_colour="white"
+        custom:shape_height="500"
+        custom:shape_width="500"
+        android:layout_marginTop="215dp"
+        android:layout_marginLeft="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView android:text="@string/graphics_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#100"
+        android:layout_marginLeft="150dp"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <string name="app_name">audioHandler</string>
+        <string name="action_settings">Settings</string>
+        <string name="back">return to previous track</string>
+        <string name="play">play song</string>
+        <string name="forward">change track</string>
+        <string name="mute">mute</string>
+        <string name="action_sound_control">Sound Control</string>
+
+    <string-array name="ControlButtons">
+        <item >Back</item>
+        <item >Play</item>
+        <item >Pause</item>
+        <item >Forward</item>
+        <item >Mute</item>
+    </string-array>
+
+
+    <string name="description">Description</string>
+
+
+        <string name="graphics_text">GRAPHICS MODULE</string>
+    <string name="title_activity_master">MasterActivity</string>
+
+
+
+
+</resources>

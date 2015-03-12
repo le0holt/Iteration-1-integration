@@ -1,0 +1,190 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/right_drawer"
+    android:layout_height="match_parent"
+
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1"
+        android:id="@+id/layout"
+        android:gravity ="center_horizontal"
+        >
+
+
+
+
+        <ImageButton
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/back"
+            android:id="@+id/back"
+            android:background="@android:drawable/ic_media_rew"
+            android:onClick="backTrack"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:contentDescription="@string/mute"
+            android:layout_height="match_parent"
+            android:id="@+id/muteButton"
+            android:background="@android:drawable/ic_lock_silent_mode_off"
+            android:onClick="mute"
+
+            />
+
+        <ImageButton
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/play"
+            android:id="@+id/playButton"
+            android:background="@android:drawable/ic_media_play"
+            android:onClick="playMusic"
+
+            />
+
+        <ImageButton
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/forward"
+            android:id="@+id/button3"
+            android:background="@android:drawable/ic_media_ff"
+            android:onClick="forwardTrack"/>
+
+    </LinearLayout>
+
+<com.sweng.claritas.socbox.ShapesView
+    android:id="@+id/black_square"
+    custom:draw_shape="rectangle"
+    custom:shape_fill="fill_on"
+    custom:line_thickness="30"
+    custom:shape_colour="blue"
+    custom:shape_height="500"
+    custom:shape_width="500"
+    android:layout_marginTop="100dp"
+    android:layout_marginLeft="100dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+
+<com.sweng.claritas.socbox.ShapesView
+    custom:draw_shape="oval"
+    custom:shape_fill="fill_on"
+    custom:line_thickness="30"
+    custom:shape_colour="black"
+    custom:shape_height="445"
+    custom:shape_width="445"
+    android:layout_marginTop="114dp"
+    android:layout_marginLeft="113dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+
+<com.sweng.claritas.socbox.ShapesView
+    custom:draw_shape="oval"
+    custom:shape_fill="fill_off"
+    custom:line_thickness="30"
+    custom:shape_colour="red"
+    custom:shape_height="445"
+    custom:shape_width="445"
+    android:layout_marginTop="114dp"
+    android:layout_marginLeft="113dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+
+<com.sweng.claritas.socbox.ShapesView
+    custom:draw_shape="rectangle"
+    custom:shape_fill="fill_off"
+    custom:line_thickness="30"
+    custom:shape_colour="black"
+    custom:shape_height="500"
+    custom:shape_width="500"
+    android:layout_marginTop="100dp"
+    android:layout_marginLeft="100dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+
+<TextView android:text="@string/graphics_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#100"
+    android:layout_marginLeft="150dp"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="4">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    />
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    />
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="4" />
+
+        <TextView
+            android:text="Hello_world"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/outText"
+            android:scrollbars="horizontal"
+            android:onClick="moveActivity"/>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
